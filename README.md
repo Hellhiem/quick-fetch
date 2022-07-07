@@ -11,13 +11,13 @@ When using `TypeScript` you can get use of `Generics` to pass down your own `Res
 Using npm:
 
 ```bash
-npm install quick-fetch
+npm install @hellhiem/quick-fetch
 ```
 
 Using yarn:
 
 ```bash
-yarn add quick-fetch
+yarn add @hellhiem/quick-fetch
 ```
 
 # Example
