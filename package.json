@@ -1,0 +1,39 @@
+{
+  "name": "quick-fetch",
+  "version": "0.1.0",
+  "author": "Milosz Szczepanek",
+  "license": "MIT",
+  "private": false,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "dependencies": {
+    "axios": "^0.27.2"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.30.5",
+    "@typescript-eslint/parser": "^5.30.5",
+    "eslint": "^8.18.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.7.1",
+    "typescript": "^4.7.4"
+  },
+  "keywords": [
+    "xhr",
+    "http",
+    "ajax",
+    "promise",
+    "node",
+    "axios",
+    "fetch",
+    "quick"
+  ],
+  "scripts": {
+    "lint": "eslint './*.{js,ts}'",
+    "lint:fix": "eslint '**/*.{js,ts}' --fix",
+    "sanity": "yarn tsc && yarn lint"
+  }
+}
