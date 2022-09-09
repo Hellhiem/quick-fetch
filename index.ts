@@ -18,13 +18,15 @@ export const quickFetch = async <ResponseType = AxiosResponse, ResponseErrorType
   endpoint: string,
   config?: AxiosRequestConfig | undefined,
 ): Promise<ResponseType> => {
-  return await axios({
-    method: method,
-    url: endpoint,
-    ...config,
-  })
-    .then((response: AxiosResponse<ResponseType>) => response.data)
-    .catch((error: ResponseErrorType) => {
-      throw error;
+  try {
+    const response: AxiosResponse<ResponseType> = await axios({
+      method: method,
+      url: endpoint,
+      ...config,
     });
+
+    return response.data;
+  } catch (error) {
+    throw error as ResponseErrorType;
+  }
 };

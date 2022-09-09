@@ -13,14 +13,15 @@ import axios from 'axios';
  * @returns response.data from api request or throws error
  */
 export const quickFetch = async (method, endpoint, config) => {
-    return await axios({
-        method: method,
-        url: endpoint,
-        ...config,
-    })
-        .then((response) => response.data)
-        .catch((error) => {
+    try {
+        const response = await axios({
+            method: method,
+            url: endpoint,
+            ...config,
+        });
+        return response.data;
+    }
+    catch (error) {
         throw error;
-    });
+    }
 };
-console.log('err');
