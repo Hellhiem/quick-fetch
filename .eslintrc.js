@@ -8,6 +8,7 @@ module.exports = {
   },
   rules: {
     'no-console': 'error',
+    'no-useless-catch': 'off',
   },
   env: {
     browser: true,
