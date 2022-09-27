@@ -1,6 +1,6 @@
 {
   "name": "@hellhiem/quick-fetch",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "author": "Milosz Szczepanek",
   "license": "MIT",
   "private": false,
@@ -17,9 +17,9 @@
     "axios": "^0.27.2"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.36.2",
-    "@typescript-eslint/parser": "^5.36.2",
-    "eslint": "^8.23.0",
+    "@typescript-eslint/eslint-plugin": "^5.38.1",
+    "@typescript-eslint/parser": "^5.38.1",
+    "eslint": "^8.24.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "prettier": "^2.7.1",
